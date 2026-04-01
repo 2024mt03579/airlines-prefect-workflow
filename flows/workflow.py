@@ -3,6 +3,7 @@
 # Prefect Login [Prefect Cloud] - https://www.prefect.io/opensource  -> get started
 
 # Step 1: Import Required Libraries
+import os
 import pandas as pd
 import numpy as np
 from pathlib import Path
@@ -13,8 +14,9 @@ from sklearn.preprocessing import MinMaxScaler
 @task
 def load_dataset():
     # Load the airline dataset from GitHub
-    url = "https://raw.githubusercontent.com/anuragvaishnava/Sem3-API-Assignment/refs/heads/main/US_DOT_Airfare_Historical_2008_2025.csv"
-    return pd.read_csv(url, low_memory=False)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(base_dir, "US_DOT_Airfare_Historical_2008_2025.csv")
+    return pd.read_csv(path, low_memory=False)
 
 # Step 3: Data Preprocessing
 @task(log_prints=True)
