@@ -3,10 +3,10 @@ import requests
 BASE_URL = "https://api.prefect.cloud/api"
 
 # Prefect Cloud credentials and identifiers
-PREFECT_API_KEY = "pnu_utO6Fjs1jiqtUwqIKG6rmjp8gonrbo392G0K"
-ACCOUNT_ID = "7f080b8b-43c7-4dcc-b351-396a3b3fe842"
-WORKSPACE_ID = "6cfccd6a-596e-4dcb-9dc1-4c35c015cc27"
-DEPLOYMENT_ID = "c0dbd294-fb2c-413c-9a74-45d80158b731"  # airline-dataset-workflow
+PREFECT_API_KEY = "pnu_gjmyoKiUBsFU0LwyVSrELkLMwHJ85n1XHGcp"
+ACCOUNT_ID = "f47937e7-20ac-4900-beba-f685f9892d9e"
+WORKSPACE_ID = "d0f98ebd-01e3-482a-9c49-5761b5b20b34"
+DEPLOYMENT_ID = "7267fef3-eeaa-4d77-8e56-8886ef9b1b5a"  # airline-dataset-workflow
 
 PREFECT_API_URL = (
     f"{BASE_URL}/accounts/{ACCOUNT_ID}/workspaces/{WORKSPACE_ID}/deployments/{DEPLOYMENT_ID}"

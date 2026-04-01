@@ -274,7 +274,8 @@ def workflow_Airline_DataSet():
    
 # Step 6: Run the Prefect Flow
 if __name__ == "__main__":
-    workflow_Airline_DataSet.serve(name="airline-dataset-workflow",
-                      tags=["first workflow"],
-                      parameters={},
-                      interval=120) #2 minutes
+    #workflow_Airline_DataSet.serve(name="airline-dataset-workflow",
+    #                  tags=["first workflow"],
+    #                  parameters={},
+    #                  interval=120) #2 minutes
+    workflow_Airline_DataSet()
