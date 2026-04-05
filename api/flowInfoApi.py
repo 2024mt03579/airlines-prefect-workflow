@@ -13,9 +13,7 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# -------------------------------
-# 1. Get Flow Info
-# -------------------------------
+# Get Flow Info
 flow_url = f"{BASE_URL}/flows/{FLOW_ID}"
 flow_response = requests.get(flow_url, headers=headers)
 
@@ -25,9 +23,8 @@ else:
     print("Error fetching flow info:", flow_response.text)
     flow_info = {}
 
-# -------------------------------
-# 2. Get Flow Runs
-# -------------------------------
+
+# Get Flow Runs
 runs_url = f"{BASE_URL}/flow_runs/filter"
 
 payload = {
@@ -48,9 +45,7 @@ else:
     print("Error fetching flow runs:", runs_response.text)
     flow_runs = []
 
-# -------------------------------
-# 3. Combine & Beautify Output
-# -------------------------------
+# Combine & Beautify Output
 output = {
     "flow_info": flow_info,
     "recent_runs": flow_runs
