@@ -24,9 +24,9 @@ try:
     )
     DEFAULT_DEPLOYMENT_ID = getattr(deployment_defaults, "DEPLOYMENT_ID", None)
 except Exception:
-    DEFAULT_API_KEY = None
-    DEFAULT_ACCOUNT_ID = "7f080b8b-43c7-4dcc-b351-396a3b3fe842"
-    DEFAULT_WORKSPACE_ID = "6cfccd6a-596e-4dcb-9dc1-4c35c015cc27"
+    DEFAULT_API_KEY = "pnu_gjmyoKiUBsFU0LwyVSrELkLMwHJ85n1XHGcp"
+    DEFAULT_ACCOUNT_ID = "f47937e7-20ac-4900-beba-f685f9892d9e"
+    DEFAULT_WORKSPACE_ID = "d0f98ebd-01e3-482a-9c49-5761b5b20b34"
     DEFAULT_DEPLOYMENT_ID = None
 
 WORKSPACE_API_URL = (
